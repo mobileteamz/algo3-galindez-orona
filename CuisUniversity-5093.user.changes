@@ -1,0 +1,2955 @@
+
+
+----STARTUP---- (21 March 2022 21:45:15) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+1+1!
+
+1+1!
+
+----STARTUP---- (28 March 2022 19:26:34) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+1!
+
+-1!
+
+3.14!
+
+true!
+
+false!
+
+nil.!
+
+meter!
+
+hola!
+
+centimeter!
+
+hour!
+
+minute.!
+
+day.!
+
+March!
+
+Monday!
+
+'hola'!
+
+$h!
+
+March!
+
+ March !
+
+10 factorial.!
+
+100 factorial!
+
+100 factorial / 99 factorial!
+
+1000 factorial!
+
+true not!
+
+false not!
+
+true & true!
+
+true & false!
+
+true | false!
+
+(10*meter)+(20*meter)!
+
+(10*hour)+(60*minute)!
+
+(10*hour)+(60*minute) convertTo: hour!
+
+(10*hour)+(60*minute) convertTo: minutes!
+
+(10*hour)+(60*minute) convertTo: minute!
+
+!classDefinition: #Hola category: 'Workspace-Objects' stamp: 'io 3/28/2022 21:02:58'!
+DenotativeObject subclass: #Hola
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+DoIt
+
+Hola!
+
+!classDefinition: #AnObject category: 'Workspace-Objects' stamp: 'io 3/28/2022 21:09:48'!
+DenotativeObject subclass: #AnObject
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+AnObject!
+
+AnObject!
+
+!classDefinition: #AnObject1 category: 'Workspace-Objects' stamp: 'io 3/28/2022 21:10:38'!
+DenotativeObject subclass: #AnObject1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+AnObject1!
+
+ObjectBuilder create: #AnObject3 asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AnObject3 category: 'DenotativeObject-Morph' stamp: 'io 3/28/2022 21:11:36'!
+DenotativeObject subclass: #AnObject3
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AnObject3 class' category: 'DenotativeObject-Morph' stamp: 'io 3/28/2022 21:11:36'!
+AnObject3 class
+	instanceVariableNames: ''!
+!AnObject3 class methodsFor: 'nil' stamp: 'io 3/28/2022 21:15:01'!
+turnOn
+	"Aca va el metodo turnOn"
+
+	| variable names statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:23'!
+turnOff
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:41'!
+speedUp
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:47' overrides: 16901488!
+break
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'nil' stamp: 'io 3/28/2022 21:18:41'!
+openTrunk
+	"openTrunk"
+
+	| statements |
+	statements! !
+
+!classRenamed: #AnObject3 as: #Auto stamp: 'io 3/28/2022 21:19:37'!
+Smalltalk renameClassNamed: #AnObject3 as: #Auto!
+
+!classRenamed: #Auto as: #Vehiculo stamp: 'io 3/28/2022 21:19:44'!
+Smalltalk renameClassNamed: #Auto as: #Vehiculo!
+!Vehiculo class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:20:48'!
+asHtml
+	"Aca va el metodo turnOn"
+
+	| statements |
+	statements! !
+!Vehiculo class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:20:56'!
+save
+	"Aca va el metodo turnOn"
+
+	| statements |
+	statements! !
+!Vehiculo class methodsFor: 'nil' stamp: 'io 3/28/2022 21:21:22'!
+asJson
+	"comment stating purpose of message"
+
+	| statements |
+	statements! !
+
+ObjectBuilder create: #AlanTuring asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanTuring category: 'DenotativeObject-Morph' stamp: 'io 3/29/2022 11:35:21'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'io 3/29/2022 11:35:21'!
+AlanTuring class
+	instanceVariableNames: ''!
+
+AlanTuring!
+
+AlanTuring dateOfBirth !
+
+AlanTuring dateOfBirth !
+
+AlanTuring printString !
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 3/29/2022 11:38:34'!
+dateOfBirth
+	"comment stating purpose of message"
+
+	self shouldBeImplemented! !
+!AlanTuring class methodsFor: 'personal info' stamp: 'io 3/29/2022 11:39:37' prior: 50473952!
+dateOfBirth
+	"comment stating purpose of message"
+
+	^June/23/1912! !
+
+AlanTuring dateOfBirth!
+
+!classDefinition: #JohnVonNeumann category: 'Workspace-Objects' stamp: 'io 3/29/2022 11:43:07'!
+DenotativeObject subclass: #JohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+JohnVonNeumann dateOfBirth!
+
+JohnVonNeumann!
+
+!classRemoval: #AnObject1 stamp: 'io 3/29/2022 14:25:45'!
+DenotativeObject subclass: #AnObject1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'io 3/29/2022 14:26:24'!
+dateOfBirth
+	^December/28/1903! !
+
+JohnVonNeumann dateOfBirth !
+
+JohnVonNeumann dateOfBirth inspect!
+
+----STARTUP---- (31 March 2022 19:23:52) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+!classDefinition: #Hola category: 'Workspace-Objects' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #Hola
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+!classDefinition: #AnObject category: 'Workspace-Objects' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AnObject
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+!classDefinition: #AnObject1 category: 'Workspace-Objects' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AnObject1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+!classDefinition: #AnObject3 category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AnObject3
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AnObject3 class' category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+AnObject3 class
+	instanceVariableNames: ''!
+
+!classDefinition: #AnObject3 category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AnObject3
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AnObject3 class' category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+AnObject3 class
+	instanceVariableNames: ''!
+!AnObject3 class methodsFor: 'nil' stamp: 'io 3/28/2022 21:15:01'!
+turnOn
+	"Aca va el metodo turnOn"
+
+	| variable names statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:23'!
+turnOff
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:41'!
+speedUp
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'as yet unclassified' stamp: 'io 3/28/2022 21:17:47' overrides: 16901488!
+break
+	"Aca va el metodo turnOff"
+
+	| statements |
+	statements! !
+!AnObject3 class methodsFor: 'nil' stamp: 'io 3/28/2022 21:18:41'!
+openTrunk
+	"openTrunk"
+
+	| statements |
+	statements! !
+
+!classDefinition: #AlanTuring category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+AlanTuring class
+	instanceVariableNames: ''!
+
+!classDefinition: #AlanTuring category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 19:24:10'!
+AlanTuring class
+	instanceVariableNames: ''!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 3/29/2022 11:38:34'!
+dateOfBirth
+	"comment stating purpose of message"
+
+	self shouldBeImplemented! !
+!AlanTuring class methodsFor: 'personal info' stamp: 'io 3/29/2022 11:39:37' prior: 50474085!
+dateOfBirth
+	"comment stating purpose of message"
+
+	^June/23/1912! !
+
+!classDefinition: #JohnVonNeumann category: 'Workspace-Objects' stamp: 'io 3/31/2022 19:24:10'!
+DenotativeObject subclass: #JohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+
+!classRemoval: #AnObject1 stamp: 'io 3/31/2022 19:24:11'!
+DenotativeObject subclass: #AnObject1
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Workspace-Objects'!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'io 3/29/2022 14:26:24'!
+dateOfBirth
+	^December/28/1903! !
+
+'hola' size even!
+
+'Hola' at: 1!
+
+'Hola' size + 'Chau' size.
+!
+
+'hola', 'chau'.
+!
+
+'hola'+'chau'.!
+
+'hola', 'chau' size.
+!
+
+'hola', 'chau' size
+!
+
+('hola', 'chau') size.
+!
+
+'hola gente!!' copyFrom: 'hola' size + 1 to: 11.
+!
+
+1+1+1!
+
+1+1/1!
+
+1+10/5!
+
+1+(10/5)!
+
+1/10+5!
+
+100/10+5!
+
+6+2*5!
+
+(6+2)*5.!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'io 3/31/2022 20:50:26'!
+AlanTuring class
+	instanceVariableNames: 'currentCompany'!
+
+AlanTuring!
+
+AlanTuring!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 3/31/2022 20:53:29'!
+currentCompany
+	"comment stating purpose of message"
+
+	
+	^currentCompany! !
+
+AlanTuring currentCompany!
+
+AlanTuring currentCompany!
+
+AlanTuring currentCompany!
+
+AlanTuring!
+
+AlanTuring currentCompany !
+!AlanTuring class methodsFor: 'personal info' stamp: 'io 3/31/2022 21:00:02' prior: 50474091!
+dateOfBirth
+	| aLongTimeAgo |
+	
+	aLongTimeAgo := May/17/1940
+
+	^aLongTimeAgo! !
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'io 3/31/2022 21:03:28'!
+isOlderThan: aPerson
+	| ageDifference |
+	ageDifference := self dateOfBirth distanceTo: aPerson dateOfBirth.! !
+
+AlanTuring!
+
+#dateOfBirth asMessage.
+#isOlderThan: asMessageWith: JohnVonNeumann.!
+
+1!
+
+self sendTo: AlanTuring.!
+
+self sendTo: JohnVonNeumann.!
+
+self sendTo: AlanTuring.!
+
+AlanTuring methodNamed: #dateOfBirth.
+!
+
+JohnVonNeumann methodNamed: #dateOfBirth.
+!
+
+AlanTuring methodNamed: #dateOfBirth.
+!
+
+AlanTuring methodNamed: #dateOfBirth.!
+
+self sourceCode.
+!
+
+self sourceCode.
+!
+
+self linesOfCode.!
+
+self sourceCode.!
+
+self linesOfCode.
+!
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+
+self sourceCode.!
+
+self linesOfCode.
+!
+
+self linesOfCode.
+!
+
+self linesOfCode.
+!
+
+AlanTuring dateOfBirth!
+
+self sourceCode!
+
+self sourceCode!
+
+self valueWithReceiver: AlanTuring arguments: #().!
+
+AlanTuring dateOfBirth!
+
+self valueWithReceiver: AlanTuring arguments: #().
+!
+
+self valueWithReceiver: AlanTuring arguments: #().
+!
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+
+AlanTuring dateOfBirth!
+
+AlanTuring!
+
+#dateOfBirth asMessage sendTo: JohnVonNeumann.
+!
+
+----STARTUP---- (5 April 2022 15:52:22) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+ObjectBuilder create: #AlanTuring asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanTuring category: 'DenotativeObject-Morph' stamp: 'io 4/5/2022 15:54:02'!
+DenotativeObject subclass: #AlanTuring
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanTuring class' category: 'DenotativeObject-Morph' stamp: 'io 4/5/2022 15:54:02'!
+AlanTuring class
+	instanceVariableNames: ''!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 4/5/2022 15:54:27'!
+dateOfBirth
+	"comment stating purpose of message"
+
+	
+	^May/17/1940! !
+
+ObjectBuilder create: #AlanKay asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanKay category: 'DenotativeObject-Morph' stamp: 'io 4/5/2022 15:54:43'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanKay class' category: 'DenotativeObject-Morph' stamp: 'io 4/5/2022 15:54:43'!
+AlanKay class
+	instanceVariableNames: ''!
+!AlanKay class methodsFor: 'nil' stamp: 'io 4/5/2022 15:55:40'!
+dateOfBirth
+	"comment stating purpose of message"
+
+	
+	^ May/17/1940! !
+
+#dateOfBirth asMessage sentTo:AlanTuring!
+
+AlanTuring methodNamed: #dateOfBirth!
+
+AlanTuring methodNamed: #dateOfBirth!
+
+self linesOfCode!
+
+self linesOfCode!
+
+self linesOfCode!
+
+AlanTuring methodNamed: #dateOfBirth!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+10 factorial!
+
+[ 10 factorial ].
+!
+
+10 factorial!
+
+[10 factorial]!
+
+[10 factorial] value!
+
+[:anInteger | anInteger factorial ] value: 10!
+
+[:anInteger | anInteger factorial ] value: 100!
+
+factorialBlock := [ :anInteger | anInteger factorial]!
+
+factorialBlock value:10!
+
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial]
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial]
+factorialSumBlock value:10 value: 20!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial]
+factorialSumBlock value:10 value: 20
+factorialSumBlock valueWithArguments: #(10 20)
+!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial]
+factorialSumBlock value: 10 value: 20!
+
+actorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].
+factorialSumBlock value: 10 value: 20.!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].
+factorialSumBlock value: 10 value: 20.
+factorialSumBlock valueWithArguments: #(10 20)
+!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ]
+factorialSumBlock value: 10 value: 20!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ]
+factorialSumBlock value: 10 value: 20.!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].
+factorialSumBlock value: 10 value: 20.!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].
+factorialSumBlock valueWithArguments: #(10 20)!
+
+factorialSumBlock := [ :anIntegerToFact1 :anIntegerToFact2 | anIntegerToFact1 factorial + anIntegerToFact2 factorial ].
+factorialSumBlock value: 10 value: 20!
+
+plusTenByTwentyBlock := [ :anAdder | | anAdderPlusTen | 
+	anAdderPlusTen := anAdder + 10.
+	anAdderPlusTen *20].
+plusTenByTwentyBlock value: 5.!
+
+plusTenByTwentyBlock := [ :anAdder | | anAdderPlusTen | 
+	anAdderPlusTen := anAdder + 10.
+	anAdderPlusTen *20].
+plusTenByTwentyBlock value: 100!
+
+sum := 0.
+5 timesRepeat:[ sum := sum + 10].
+sum.!
+
+10>5 ifTrue:[ 'Si Diez es mayor a cinco'] ifFalse:['No,  no es werdad']!
+
+sum := 0.
+#(1 2 3 4 5) do:[ :anInteger | sum := sum + anInteger ]!
+
+sum := 0.
+#(1 2 3 4 5) do:[ :anInteger | sum := sum + anInteger ].
+sum!
+
+#(1 2 3 4 5) inject: 0 into:[ :acum :anInteger | acum+Integer]!
+
+sum := 0.
+#(1 2 3 4 5) inject: 0 into:[ :acum :anInteger | acum + anInteger]!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 4/7/2022 19:45:52' overrides: 50447937!
+doesNotUnderstand: aMessage
+
+	^'No entiendo lo que me decis con ', aMessage asString! !
+
+AlanTuring hola.!
+
+AlanTuring hola.!
+
+AlanTuring hola.!
+
+AlanTuring hola.!
+
+AlanTuring hola.!
+
+a := 1.
+a := a + 1.
+
+!
+
+a := 1.
+a := a + 1.
+a !
+
+a := a + 1.
+a !
+
+AlanTuring chau!
+
+AlanTuring chau!
+
+AlanTuring chau!
+
+AlanTuring chau!
+
+AlanTuring chau.!
+
+adios!
+
+AlanTuring adios!
+
+AlanTuring adios.!
+
+AlanTuring adios.!
+
+AlanTuring adios.!
+
+AlanTuring saludos.  !
+
+ObjectBuilder create: #JohnVonNeumann asChildOf: DenotativeObject collaboratorNames: '' in: 'DenotativeObject-Morph'!
+
+!classDefinition: #JohnVonNeumann category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:20:07'!
+DenotativeObject subclass: #JohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'JohnVonNeumann class' category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:20:07'!
+JohnVonNeumann class
+	instanceVariableNames: ''!
+
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: #CloneOfJohnVonNeumann category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:21:00'!
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+
+!classDefinition: 'CloneOfJohnVonNeumann class' category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:21:00'!
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'io 4/7/2022 20:21:43'!
+saludar
+	^'Hola mundo!!!!'! !
+!JohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'io 4/7/2022 20:22:00'!
+dateOfBirth
+	^May/17/1940! !
+
+!classRemoval: #CloneOfJohnVonNeumann stamp: 'io 4/7/2022 20:22:06'!
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: #CloneOfJohnVonNeumann category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:22:15'!
+DenotativeObject subclass: #CloneOfJohnVonNeumann
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+
+!classDefinition: 'CloneOfJohnVonNeumann class' category: 'DenotativeObject-Morph' stamp: 'io 4/7/2022 20:22:15'!
+CloneOfJohnVonNeumann class
+	instanceVariableNames: ''!
+!CloneOfJohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'io 4/7/2022 20:22:15'!
+dateOfBirth
+	^May/17/1940! !
+!CloneOfJohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'io 4/7/2022 20:22:15'!
+saludar
+	^'Hola mundo!!!!'! !
+!CloneOfJohnVonNeumann class methodsFor: 'nil' stamp: 'io 4/7/2022 20:23:46'!
+limpiarHabitacion
+! !
+
+(June/23/2019) = (June/23/2019).
+(June/23/2019) == (June/23/2019).
+!
+
+(June/23/2019) = (June/23/2019).!
+
+(June/23/2019) == (June/23/2019).!
+
+100 factorial = 100 factorial.!
+
+100 factorial == 100 factorial.!
+
+a := 100 factorial
+a == a!
+
+a := 100 factorial.
+a == a!
+!JohnVonNeumann class methodsFor: 'nil' stamp: 'io 4/7/2022 21:00:17'!
+m1: collaborator1
+
+   | temp1 |
+
+   ^thisContext! !
+!JohnVonNeumann class methodsFor: 'as yet unclassified' stamp: 'io 4/7/2022 21:00:33' prior: 50474244!
+m1: collaborator1
+   | temp1 |
+
+   ^thisContext! !
+
+JohnVonNeumann m1:'hola'.!
+
+JohnVonNeumann m1:'hola'.!
+
+JohnVonNeumann m1:'hola'.!
+
+self tempsAndValues.
+self tempAt: 1.
+self tempAt: 2.
+self tempAt: 2 put: 20.
+self tempAt: 2.!
+
+self tempsAndValues.!
+
+self tempsAndValues.!
+
+JohnVonNeumann m1:'hola'.!
+
+self tempsAndValues.!
+
+self tempAt: 1.!
+
+self tempAt: 2.!
+
+self tempAt: 2 put: 20.!
+
+self tempAt: 2.!
+
+self tempsAndValues.!
+!AlanTuring class methodsFor: 'nil' stamp: 'io 4/7/2022 21:07:17'!
+isOlderThan: unaPersona
+	^True! !
+
+Assert numberOfMethods!
+
+self setSelectionIndex: 1.!
+
+self setSelectionIndex: 3.!
+
+self selection: #fail.!
+
+list count!
+
+list size!
+
+self setSelectionIndex: 1.
+!
+
+self setSelectionIndex: 3.!
+
+self setSelectionIndex: 1.!
+
+self setSelectionIndex: 3. true !
+
+self setSelectionIndex: 1. true !
+
+self selection: #fail.!
+
+DenotativeObject-Morph browse!
+
+DenotativeObject-Morph browse.!
+
+DenotativeObject-Morph browse.!
+
+self send.
+!
+
+self send.
+ nil !
+
+self send.!
+
+self send.!
+
+AlanKay
+	collaboratorNames: 'unValos'
+	in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanKay category: 'DenotativeObject-Morph' stamp: 'io 4/8/2022 18:04:58'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanKay class' category: 'DenotativeObject-Morph' stamp: 'io 4/8/2022 18:04:58'!
+AlanKay class
+	instanceVariableNames: 'unValos'!
+
+AlanKay
+	collaboratorNames: 'unValor'
+	in: 'DenotativeObject-Morph'!
+
+!classDefinition: #AlanKay category: 'DenotativeObject-Morph' stamp: 'io 4/8/2022 18:04:59'!
+DenotativeObject subclass: #AlanKay
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'DenotativeObject-Morph'!
+
+!classDefinition: 'AlanKay class' category: 'DenotativeObject-Morph' stamp: 'io 4/8/2022 18:04:59'!
+AlanKay class
+	instanceVariableNames: 'unValor'!
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'io 4/8/2022 18:08:29' prior: 50474024!
+dateOfBirth
+	"comment stating purpose of message"
+	self.unValor = 10
+	
+	self.unValor > 10 ifTrue: [
+			^ May/17/1940
+		] 
+				ifFalse: [
+			^ May/19/1999
+		]
+! !
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'io 4/8/2022 18:08:53' prior: 50474313!
+dateOfBirth
+	"comment stating purpose of message"
+	self.unValor = 10
+	
+	self.unValor > 10 ifTrue: [
+			^ May/17/1940
+		] 
+				
+				
+	^ May/19/1999
+! !
+
+AlanKay dateOfBirth!
+
+AlanKay dateOfBirth!
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'io 4/8/2022 18:09:26' prior: 50474322!
+dateOfBirth
+	"comment stating purpose of message"
+	self.unValor = 10
+	
+	self.unValor > 10 ifTrue: [
+			^ May/17/1940
+		] 
+								
+	^ May/19/1999
+! !
+
+AlanKay dateOfBirth.!
+
+AlanKay dateOfBirth.!
+!AlanKay class methodsFor: 'as yet unclassified' stamp: 'io 4/8/2022 18:09:50' prior: 50474332!
+dateOfBirth
+	"comment stating purpose of message"
+	self.unValor := 10
+	
+	self.unValor > 10 ifTrue: [
+			^ May/17/1940
+		] 
+								
+	^ May/19/1999
+! !
+
+AlanKay dateOfBirth.!
+
+self dateOfBirth!
+
+----STARTUP---- (21 April 2022 19:03:39) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+----End fileIn of /Users/nacho/Documents/Proyectos/FIUBA/algoritmos_3/Ejercicio1-Avispas-y-Abejas-Episodio2.CodigoInicial.st----!
+
+Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:26:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:26:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:30:00'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:30:00'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:33:19'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:33:19'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:34:44'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:34:44'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:34:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:34:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:35:17'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:35:17'!
+ERROR!
+
+!classDefinition: #ElHabitat category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 19:35:33'!
+DenotativeObject subclass: #ElHabitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:35:31' prior: 50474670!
+habitat
+	^ElHabitat! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:36:30'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:36:30'!
+ERROR!
+
+!classDefinition: #LaAvispa category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 19:36:47'!
+DenotativeObject subclass: #LaAvispa
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:36:45' prior: 50474690!
+laAvispaOriana
+	^LaAvispa! !
+
+!classRenamed: #ElHabitat as: #Habitat stamp: 'IO-MG 4/21/2022 19:41:39'!
+Smalltalk renameClassNamed: #ElHabitat as: #Habitat!
+!PruebasReproduccionDeAvispas class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:41:39' prior: 50474807!
+habitat
+	^Habitat! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:42:55'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:42:55'!
+ERROR!
+
+!classDefinition: #Avispa category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 19:43:32'!
+DenotativeObject subclass: #Avispa
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:43:31' prior: 50474825!
+laAvispaOriana
+	^Avispa! !
+
+!classRemoval: #LaAvispa stamp: 'IO-MG 4/21/2022 19:43:39'!
+DenotativeObject subclass: #LaAvispa
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:44:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:44:11'!
+ERROR!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 19:44:29'!
+cantidadDeHuevosDeAvispas
+	self shouldBeImplemented.! !
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 19:44:53'!
+Habitat class
+	instanceVariableNames: 'huevos'!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 19:44:47' prior: 50474868!
+cantidadDeHuevosDeAvispas
+	^ huevos! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:45:27'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:45:27'!
+ERROR!
+!Habitat class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 19:46:09'!
+iniciarHabitat
+	huevos := 0! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:46:15' prior: 50474888!
+iniciarHabitat
+	huevos := 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:46:24'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:46:24'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:49:03' prior: 50474742!
+retrocederElHabitatAlInicioDeLosTiempos
+	self habitat iniciarHabitat! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:49:06' prior: 50474904!
+retrocederElHabitatAlInicioDeLosTiempos
+	self habitat iniciarHabitat.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:49:13'!
+PASSED!
+
+	self hacerQueElHabitatTengaLosRecursosSuficientes.!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:50:30' prior: 50474677!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	self habitat agregarRecursos! !
+!Habitat class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 19:51:04'!
+agregarRecursos
+	huevos := huevos + 1! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:51:08' prior: 50474926!
+agregarRecursos
+	huevos := 1.! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:51:11' prior: 50474931!
+agregarRecursos
+	huevos := huevos + 1.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 19:51:35' prior: 50474921!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	self habitat agregarRecursos.! !
+!Habitat class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 19:54:09'!
+laAvispaOriana
+	^ Avispa! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 19:55:50'!
+intentarReproducirse
+	^ true! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:55:54' prior: 50474949!
+intentarReproducirse
+	^ True! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:58:16'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:58:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 19:58:47'!
+ERROR!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 19:59:28' prior: 50474936!
+agregarRecursos
+! !
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:00:29'!
+Habitat class
+	instanceVariableNames: 'huevos avispaOriana'!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:00:23' prior: 50474893!
+iniciarHabitat
+	huevos := 0.
+	avispaOriana := Avispa! !
+
+Avispa
+	collaboratorNames: 'huevos'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #Avispa category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:01:43'!
+DenotativeObject subclass: #Avispa
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'Avispa class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:01:43'!
+Avispa class
+	instanceVariableNames: 'huevos'!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:01:52' prior: 50474954!
+intentarReproducirse
+	huevos := huevos +1! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:03:35' prior: 50474878!
+cantidadDeHuevosDeAvispas
+	^ self laAvispaOriana dameCantidadHuevos! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:03:44' prior: 50475001!
+cantidadDeHuevosDeAvispas
+	^ self laAvispaOriana dameCantidadHuevos.! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:03:58'!
+dameCantidadHuevos
+	^ huevos! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:04:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:04:08'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:04:15' prior: 50474996!
+intentarReproducirse
+	huevos := huevos + 1! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:04:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:04:22'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:04:30' prior: 50475022!
+intentarReproducirse
+	huevos := huevos + 1.! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:05:07'!
+iniciar
+	huevos := 0! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:05:47' prior: 50474977!
+iniciarHabitat
+	avispaOriana := Avispa
+	avispaOriana iniciar! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:05:57'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:05:57'!
+ERROR!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:06:41' prior: 50475041!
+iniciarHabitat
+	avispaOriana := Avispa
+	avispaOriana iniciar! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:06:47' prior: 50475052!
+iniciarHabitat
+	avispaOriana := Avispa.
+	avispaOriana iniciar! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:07:08' prior: 50475057!
+iniciarHabitat
+	avispaOriana := Avispa.
+	avispaOriana iniciar.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:07:19'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:07:27'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:07:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:07:42'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:07:42'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:08:41'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:08:41'!
+ERROR!
+
+Habitat
+	collaboratorNames: 'huevos orugas avispaOriana'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #Habitat category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:09:39'!
+DenotativeObject subclass: #Habitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:09:39'!
+Habitat class
+	instanceVariableNames: 'huevos orugas avispaOriana'!
+
+!classDefinition: 'Avispa class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:11:05'!
+Avispa class
+	instanceVariableNames: 'huevos orugas'!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:11:02' prior: 50475037!
+iniciar
+	huevos := 0.
+	orugas := 0.
+	! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:11:24' prior: 50475033!
+intentarReproducirse
+	huevos := huevos + 1.
+	orugas := orugas - 1.! !
+
+Habitat
+	collaboratorNames: 'huevos avispaOriana'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #Habitat category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:11:29'!
+DenotativeObject subclass: #Habitat
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:11:29'!
+Habitat class
+	instanceVariableNames: 'huevos avispaOriana'!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:11:36'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:11:36'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:12:35' prior: 50474727!
+queElHabitatTengaUnaOrugaMas
+	self laAvispaOriana agregarOruga! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:12:42' prior: 50475141!
+queElHabitatTengaUnaOrugaMas
+	self laAvispaOriana agregarOruga.! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:13:03'!
+agregarOruga
+	orugas := orugas + 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:13:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:13:11'!
+ERROR!
+!Habitat class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:14:40'!
+cantidadDeOrugas
+	^ avispaOriana cantidadOrugas! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:15:03'!
+cantidadDeOrugas
+	^ orugas! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:15:30'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:15:30'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:15:46'!
+cantidadOrugas
+	^ orugas! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:15:55'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:16:01'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:16:01'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:16:38' prior: 50474711!
+queElHabitatTengaDosOrugasMas
+	self laAvispaOriana agregarOruga.
+	self laAvispaOriana agregarOruga.
+	! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:16:42'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:16:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:16:46'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:17:39' prior: 50475114!
+intentarReproducirse
+	orugas > 0 ifTrue: [huevos := huevos + 1].
+! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:17:49' prior: 50475206!
+intentarReproducirse
+	orugas > 0 ifTrue: [huevos := huevos + 1. orugas := orugas -1].
+! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:15'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:32'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:18:32'!
+ERROR!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:19:28' prior: 50474968!
+agregarRecursos
+	avispaOriana agregarOruga.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:56'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:19:56'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/21/2022 20:20:09' prior: 50474399!
+test03CadaVezQueOrianaSeReproduceDejaUnHuevoMas
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaOriana intentarReproducirse.	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 2.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:20:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:20:52'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:21:18' prior: 50474941!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	self habitat agregarRecursos.
+	self habitat agregarRecursos.! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:21:29' prior: 50475246!
+agregarRecursos
+	avispaOriana agregarOruga.
+	avispaOriana agregarOruga.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:37'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:21:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:23:11'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:23:11'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:23:34' prior: 50474697!
+laAvispaOrnella
+	^Avispa.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:23:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:24:17'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:24:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:24:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:24:45'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:24:54' prior: 50474704!
+laAvispaPolly
+	^Avispa.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:24:58'!
+PASSED!
+!Habitat class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:25:49'!
+cantidadDePolillas
+	^ 0.! !
+
+Avispa
+	collaboratorNames: 'huevos orugas'
+	in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #Avispa category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:27:54'!
+DenotativeObject subclass: #Avispa
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'Avispa class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:27:54'!
+Avispa class
+	instanceVariableNames: 'huevos orugas'!
+
+!classDefinition: 'Avispa class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:28:17'!
+Avispa class
+	instanceVariableNames: 'orugas huevos polillas'!
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:28:15'!
+cantidadPolillas
+	^ polillas.! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:28:41' prior: 50475212!
+intentarReproducirse
+	orugas > 0 ifTrue: [huevos := huevos + 1. orugas := orugas -1. polillas := polillas -1].
+! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:29:18' prior: 50474734!
+queElHabitatTengaUnaPolillaMas
+	self laAvispaPolly agregarPolilla.! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/21/2022 20:29:53'!
+agregarPolilla
+	polillas := polillas + 1.! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:30:15' prior: 50475109!
+iniciar
+	huevos := 0.
+	orugas := 0.
+	polillas := 0.
+	! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:30:28'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/21/2022 20:31:19' prior: 50474719!
+queElHabitatTengaDosPolillasMas
+	self laAvispaPolly agregarPolilla.
+	self laAvispaPolly agregarPolilla.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:31:26'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:31:26'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/21/2022 20:32:55' prior: 50475394!
+intentarReproducirse
+	orugas > 0 ifTrue: [huevos := huevos + 1. orugas := orugas -1].
+	polillas > 0 ifTrue: [polillas := polillas - 1].! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:33:01'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:33:01'!
+ERROR!
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/21/2022 20:37:56'!
+Habitat class
+	instanceVariableNames: 'avispaOriana huevos avispaPolly'!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/21/2022 20:37:54' prior: 50475062!
+iniciarHabitat
+	avispaOriana := Avispa.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:38:04'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/21/2022 20:38:04'!
+ERROR!
+
+----SNAPSHOT----(21 April 2022 21:01:04) CuisUniversity-5093.image priorSource: 4549442!
+
+----QUIT----(24 April 2022 21:17:35) CuisUniversity-5093.image priorSource: 4602063!
+
+----STARTUP---- (24 April 2022 21:17:55) as /Applications/cuis/CuisUniversity-5093.image!
+
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:19:56'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:20:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:20:03'!
+ERROR!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:21:50' prior: 50475366!
+cantidadDePolillas
+	^ avispaPolly cantidadDePolillas! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:22:08' prior: 50475484!
+cantidadDePolillas
+	^ avispaPolly cantidadPolillas! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:22:27'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:22:33'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:22:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:22:47'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 21:27:50' prior: 50474646!
+cantidadDeHuevosConLaFirmaGeneticaDeOriana
+	^ self laAvispaOriana dameCantidadHuevos ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:27:53'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:28:03'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:28:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:28:08'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 21:28:49' prior: 50474662!
+cantidadDeHuevosConLaFirmaGeneticaDePolly
+	^ self laAvispaPolly dameCantidadHuevos! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:28:53'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:28:53'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:29:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:29:50'!
+ERROR!
+
+self cantidadDeHuevosConLaFirmaGeneticaDeOriana!
+
+self retrocederElHabitatAlInicioDeLosTiempos. !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:40:13' prior: 50475011!
+dameCantidadHuevos
+	^ huevos.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 21:40:21' prior: 50475507!
+cantidadDeHuevosConLaFirmaGeneticaDeOriana
+	^ self laAvispaOriana dameCantidadHuevos.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:41:53'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:41:58'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:42:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:42:03'!
+ERROR!
+
+self laAvispaOriana dameCantidadHuevos.!
+
+DenotativeObject subclass: #AvispaPolly
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: #AvispaPolly category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 21:46:43'!
+DenotativeObject subclass: #AvispaPolly
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+AvispaPolly class
+	instanceVariableNames: 'orugas huevos polillas'!
+
+!classDefinition: 'AvispaPolly class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 21:46:43'!
+AvispaPolly class
+	instanceVariableNames: 'orugas huevos polillas'!
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+agregarOruga
+	orugas := orugas + 1.! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+agregarPolilla
+	polillas := polillas + 1.! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+cantidadDeOrugas
+	^ orugas! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+cantidadOrugas
+	^ orugas! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+cantidadPolillas
+	^ polillas.! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+dameCantidadHuevos
+	^ huevos.! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+iniciar
+	huevos := 0.
+	orugas := 0.
+	polillas := 0.
+	! !
+!AvispaPolly class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:46:43'!
+intentarReproducirse
+	orugas > 0 ifTrue: [huevos := huevos + 1. orugas := orugas -1].
+	polillas > 0 ifTrue: [polillas := polillas - 1].! !
+
+!classRenamed: #AvispaPolly as: #AvispaOriana stamp: 'IO-MG 4/24/2022 21:47:04'!
+Smalltalk renameClassNamed: #AvispaPolly as: #AvispaOriana!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 21:47:17' prior: 50474946!
+laAvispaOriana
+	^ AvispaOriana! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:47:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:47:33'!
+ERROR!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 21:48:08' prior: 50475453!
+iniciarHabitat
+	avispaOriana := AvispaOriana.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:48:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:48:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:48:32'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:48:32'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:09'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:15'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:49:25'!
+PASSED!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 21:49:49' prior: 50475643!
+iniciarHabitat
+	avispaOriana := Avispa.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:52:13' prior: 50474552!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	[self laAvispaOriana = self laAvispaPolly] 
+		ifTrue: ['greater'].
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:52:53'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:52:53'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:52:57' prior: 50475691!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	[self laAvispaOriana = self laAvispaPolly] 
+		ifTrue: ['greater'].
+	
+	"Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0."! !
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:53:34' prior: 50475715!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	[self laAvispaOriana = self laAvispaPolly] 
+		ifTrue: [ Assert True].
+	
+	"Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0."! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:53:53'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:53:53'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:54:04' prior: 50475733!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	[self laAvispaOriana == self laAvispaPolly] 
+		ifTrue: [ Assert True]
+		ifFalse: [Assert False].
+	
+	"Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0."! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:54:06'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:54:06'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:54:28' prior: 50475757!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:55:02' prior: 50475782!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.	
+	self laAvispaOriana intentarReproducirse .
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 1.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 21:57:53' prior: 50474852!
+laAvispaOriana
+	^AvispaOriana! !
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 21:58:07' prior: 50475798!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.		
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:58:09'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:58:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:58:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 21:58:18'!
+ERROR!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:00:06' prior: 50475683!
+iniciarHabitat
+	avispaOriana := AvispaOriana.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:49'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:49'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:58'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:00:58'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:03:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:03:33'!
+ERROR!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:05:10' prior: 50475306!
+agregarRecursos
+	avispaOriana agregarOruga.
+	avispaPolly agregarOruga.
+	
+	! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:28'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:32'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:36'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:40'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:54'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:54'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:05:59'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:06:03'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:06:07'!
+PASSED!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:06:36' prior: 50475006!
+cantidadDeHuevosDeAvispas
+	^ self laAvispaOriana dameCantidadHuevos + self laAvispaPolly dameCantidadHuevos! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:06:39' prior: 50475917!
+cantidadDeHuevosDeAvispas
+	^ self laAvispaOriana dameCantidadHuevos + self laAvispaPolly dameCantidadHuevos.! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:07:11' prior: 50475924!
+cantidadDeHuevosDeAvispas
+	^ [self laAvispaOriana dameCantidadHuevos] + [self laAvispaPolly dameCantidadHuevos].! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:08:26' prior: 50475931!
+cantidadDeHuevosDeAvispas
+	^ [self laAvispaOriana dameCantidadHuevos] + [avispaPolly dameCantidadHuevos].! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:08:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:08:48'!
+ERROR!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:08:57' prior: 50475938!
+cantidadDeHuevosDeAvispas
+	^ self laAvispaOriana dameCantidadHuevos + avispaPolly dameCantidadHuevos.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:09:01'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:09:19'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:09:24'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:09:24'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:09:29'!
+PASSED!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:12:34' prior: 50475162!
+cantidadDeOrugas
+	^ avispaOriana cantidadOrugas + avispaPolly cantidadDeOrugas ! !
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:12:44' prior: 50475973!
+cantidadDeOrugas
+	^ avispaOriana cantidadOrugas + avispaPolly cantidadOrugas ! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:13:04'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:13:07'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:13:07'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:13:13'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:13:48' prior: 50475340!
+laAvispaOrnella
+	^AvispaOriana.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:13:55'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:00'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:03'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:15'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:25'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:14:32'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:15:07'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:15:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:15:14'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:15:17'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:15:17'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:16:21' prior: 50474654!
+cantidadDeHuevosConLaFirmaGeneticaDeOrnella
+	^ self laAvispaOrnella dameCantidadHuevos.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:16:35'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:16:55' prior: 50474585!
+test18CuandoLaraLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOrnella intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeLara isEqualTo: 1.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:17:40' prior: 50474638!
+cantidadDeHuevosConLaFirmaGeneticaDeLara
+	^ 1.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:17:43'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:17:43'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:17:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:17:47'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:18:02' prior: 50474683!
+laAvispaLara
+	^ Avispa.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:18:07'!
+PASSED!
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:18:18' prior: 50474599!
+test19CuandoLaraLaAvispaSeReproduceLeSacaElHuevoAOtraAvispa
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaOriana intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+!PruebasReproduccionDeAvispas class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:20:48' prior: 50474613!
+test20CuandoLaraLaAvispaSeReproduceLeSacaElHuevoAPolly
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaPolly intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 0.! !
+
+DenotativeObject subclass: #AvispaLara
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: #AvispaLara category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:23:07'!
+DenotativeObject subclass: #AvispaLara
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+AvispaLara class
+	instanceVariableNames: ''!
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:23:07'!
+AvispaLara class
+	instanceVariableNames: ''!
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test01EnElInicioDeLosTiemposNoHayHuevos	
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0! !
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test02CuandoOrianaLaAvispaSeReproducePorPrimeraVezDejaUnHuevo
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test03CadaVezQueOrianaSeReproduceDejaUnHuevoMas
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaOriana intentarReproducirse.	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 2.! !
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test04ParaDejarUnHuevoOrianaLaAvispaReduceLaPoblacionDeUnaOrugaANinguna
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	self queElHabitatTengaUnaOrugaMas.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeOrugas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test05ParaDejarUnHuevoOrianaLaAvispaDecrementaEnUnoLaPoblacionDeOrugasDelHabitat
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	self queElHabitatTengaDosOrugasMas.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeOrugas isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Oriana' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test06CuandoNoHayOrugasOrianaLaAvispaNoPuedeDejarHuevos
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Ornella' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test07CuandoOrnellaLaAvispaSeReproduceDejaUnHuevo
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOrnella intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Ornella' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test08ParaDejarUnHuevoOrnellaLaAvispaReduceLaPoblacionDeUnaOrugaANinguna
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	self queElHabitatTengaUnaOrugaMas.
+	
+	self laAvispaOrnella intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeOrugas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Ornella' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test09CuandoNoHayOrugasOrnellaLaAvispaNoPuedeDejarHuevos
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	
+	self laAvispaOrnella intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Polly' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test10CuandoPollyLaAvispaSeReproduceDejaUnHuevo
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Polly' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test11ParaDejarUnHuevoPollyLaAvispaReduceLaPoblacionDeUnaPolillaANinguna
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	self queElHabitatTengaUnaPolillaMas.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	Assert that: self habitat cantidadDePolillas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Polly' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test12ParaDejarUnHuevoPollyLaAvispaDecrementaEnUnoLaPoblacionDePolillasDelHabitat
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	self queElHabitatTengaDosPolillasMas.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	Assert that: self habitat cantidadDePolillas isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Polly' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test13CuandoNoHayPolillasPollyLaAvispaNoPuedeDejarHuevos
+	self retrocederElHabitatAlInicioDeLosTiempos.
+	
+	self laAvispaPolly intentarReproducirse.
+	
+	Assert that: self habitat cantidadDeHuevosDeAvispas isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test14CuandoOrianaLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test15CuandoOrianaLaAvispaAunNoSeReprodujoNoTieneHuevosConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	
+	self laAvispaOriana intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test16CuandoPollyLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaPolly intentarReproducirse.		
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 1.
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - firma genetica' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test17CuandoOrnellaLaAvispaSeReproduceDejaUnHuevoConLaMismaFirmaGeneticaQueOriana
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOrnella intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOrnella isEqualTo: 1.
+	Assert 
+		that: self cantidadDeHuevosConLaFirmaGeneticaDeOrnella  
+		isEqualTo: self cantidadDeHuevosConLaFirmaGeneticaDeOriana! !
+!AvispaLara class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test18CuandoLaraLaAvispaSeReproduceDejaUnHuevoConSuFirmaGenetica
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+	
+	self laAvispaOrnella intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeLara isEqualTo: 1.! !
+!AvispaLara class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test19CuandoLaraLaAvispaSeReproduceLeSacaElHuevoAOtraAvispa
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaOriana intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeOriana isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test20CuandoLaraLaAvispaSeReproduceLeSacaElHuevoAPolly
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+	self hacerQueElHabitatTengaLosRecursosSuficientes.
+
+	self laAvispaPolly intentarReproducirse.	
+	self laAvispaLara intentarReproducirse.
+	
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDePolly isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'tests - Lara la ladrona' stamp: 'IO-MG 4/24/2022 22:23:07'!
+test21CuandoLaraLaAvispaNoTieneRecursosNoDejaUnHuevo
+	self retrocederElHabitatAlInicioDeLosTiempos. 
+		
+	self laAvispaLara intentarReproducirse.
+		
+	Assert that: self cantidadDeHuevosConLaFirmaGeneticaDeLara isEqualTo: 0.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+cantidadDeHuevosConLaFirmaGeneticaDeLara
+	^ 1.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+cantidadDeHuevosConLaFirmaGeneticaDeOriana
+	^ self laAvispaOriana dameCantidadHuevos.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+cantidadDeHuevosConLaFirmaGeneticaDeOrnella
+	^ self laAvispaOrnella dameCantidadHuevos.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+cantidadDeHuevosConLaFirmaGeneticaDePolly
+	^ self laAvispaPolly dameCantidadHuevos! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+habitat
+	^Habitat! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+hacerQueElHabitatTengaLosRecursosSuficientes
+	self habitat agregarRecursos.
+	self habitat agregarRecursos.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+laAvispaLara
+	^ Avispa.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+laAvispaOriana
+	^AvispaOriana! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+laAvispaOrnella
+	^AvispaOriana.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+laAvispaPolly
+	^Avispa.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+queElHabitatTengaDosOrugasMas
+	self laAvispaOriana agregarOruga.
+	self laAvispaOriana agregarOruga.
+	! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+queElHabitatTengaDosPolillasMas
+	self laAvispaPolly agregarPolilla.
+	self laAvispaPolly agregarPolilla.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+queElHabitatTengaUnaOrugaMas
+	self laAvispaOriana agregarOruga.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+queElHabitatTengaUnaPolillaMas
+	self laAvispaPolly agregarPolilla.! !
+!AvispaLara class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:23:07'!
+retrocederElHabitatAlInicioDeLosTiempos
+	self habitat iniciarHabitat.! !
+
+!classRemoval: #AvispaLara stamp: 'IO-MG 4/24/2022 22:23:22'!
+DenotativeObject subclass: #AvispaLara
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+ObjectBuilder create: #AvispaLara asChildOf: DenotativeObject collaboratorNames: '' in: 'AvispasYAbejasParte2'!
+
+!classDefinition: #AvispaLara category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:23:38'!
+DenotativeObject subclass: #AvispaLara
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AvispasYAbejasParte2'!
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:23:38'!
+AvispaLara class
+	instanceVariableNames: ''!
+!AvispaLara class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:24:17'!
+intentarReproducir
+	self laAvispaOriana! !
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:25:19'!
+AvispaLara class
+	instanceVariableNames: 'avispaOriana'!
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:25:32'!
+AvispaLara class
+	instanceVariableNames: 'avispaOriana avispaPolly'!
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:25:45'!
+AvispaLara class
+	instanceVariableNames: 'avispaPolly avispaOriana avispaOrnella'!
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:26:33'!
+Habitat class
+	instanceVariableNames: 'avispaPolly huevos avispaOriana avispaLara'!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:27:41' prior: 50475847!
+iniciarHabitat
+	avispaOriana := AvispaOriana.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.
+	avispaLara := AvispaLara.
+	avispaLara iniciarCon:AvispaOriana yCon:avispaPolly.
+! !
+!AvispaLara class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:28:24'!
+iniciarCon:avispaO yCon:avispaP
+	avispaOriana := avispaO.
+	avispaPolly := avispaP.
+	! !
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:28:58'!
+iniciarCon:avispaO yCon:avispaP yTambien:avispaOrn
+	avispaOriana := avispaO.
+	avispaPolly := avispaP.
+	avispaOrnella := avispaOrn.
+	! !
+
+!classDefinition: 'Habitat class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:30:25'!
+Habitat class
+	instanceVariableNames: 'avispaLara avispaOriana huevos avispaPolly avispaOrnella'!
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:30:22' prior: 50476516!
+iniciarHabitat
+	avispaOriana := AvispaOriana.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.
+	avispaLara := AvispaLara.
+	avispaLara iniciarCon:AvispaOriana yCon:avispaPolly yTambien:avispaOrnella.
+! !
+!Habitat class methodsFor: 'Info' stamp: 'IO-MG 4/24/2022 22:30:53' prior: 50476545!
+iniciarHabitat
+	avispaOriana := AvispaOriana.
+	avispaOriana iniciar.
+	avispaPolly := Avispa.
+	avispaPolly iniciar.
+	avispaLara := AvispaLara.
+	avispaOrnella := AvispaOriana.
+	avispaOrnella  iniciar.
+	
+	avispaLara iniciarCon:AvispaOriana yCon:avispaPolly yTambien:avispaOrnella.
+! !
+!AvispaLara class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:31:32'!
+intentarReproducirse
+	! !
+
+!methodRemoval: AvispaLara class #iniciarCon:yCon: stamp: 'IO-MG 4/24/2022 22:31:49'!
+iniciarCon:avispaO yCon:avispaP
+	avispaOriana := avispaO.
+	avispaPolly := avispaP.
+	!
+
+!methodRemoval: AvispaLara class #intentarReproducir stamp: 'IO-MG 4/24/2022 22:31:59'!
+intentarReproducir
+	self laAvispaOriana!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:32:32' prior: 50476567!
+intentarReproducirse
+	avispaOrnella ! !
+!Avispa class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:33:05'!
+perderHuevo
+	huevos := huevos - 1.! !
+!AvispaOriana class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:33:26'!
+perderHuevo
+	huevos := huevos - 1.! !
+
+!classDefinition: 'AvispaLara class' category: 'AvispasYAbejasParte2' stamp: 'IO-MG 4/24/2022 22:34:09'!
+AvispaLara class
+	instanceVariableNames: 'avispaOrnella avispaOriana avispaPolly huevos'!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:34:07' prior: 50476581!
+intentarReproducirse
+	avispaOrnella perderHuevo.
+	avispaPolly perderHuevo.
+	avispaOriana perderHuevo.
+	huevos := huevos + 3.! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:34:59' prior: 50476589!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1].
+! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:35:10' prior: 50476585!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1].
+! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:35:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:35:25'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:35:25'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:36:42' prior: 50476088!
+laAvispaLara
+	^ AvispaLara.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:36:53'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:36:53'!
+ERROR!
+!Habitat class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:37:48' prior: 50475878!
+agregarRecursos
+	avispaOriana agregarOruga.
+	avispaPolly agregarOruga.
+	avispaOrnella agregarOruga.
+	
+	! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:37:54'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:37:54'!
+ERROR!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:40:01' prior: 50476531!
+iniciarCon:avispaO yCon:avispaP yTambien:avispaOrn
+	huevos := 0.
+
+	avispaOriana := avispaO.
+	avispaPolly := avispaP.
+	avispaOrnella := avispaOrn.
+	! !
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:41:09' prior: 50476608!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1. ^ True].
+	^ False.
+! !
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:41:15' prior: 50476614!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1. ^ True].
+	^ False.
+! !
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:42:05' prior: 50476600!
+intentarReproducirse
+	| cant |
+	avispaOrnella perderHuevo ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:42:17' prior: 50476673!
+intentarReproducirse
+	| cant |
+	cant := 0.
+	avispaOrnella perderHuevo ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:42:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:42:28'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:42:51'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:42:51'!
+ERROR!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:43:05' prior: 50476684!
+intentarReproducirse
+	| cant |
+	cant := 0.
+	[avispaOrnella perderHuevo] ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:43:10'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:43:10'!
+ERROR!
+!Avispa class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:44:40' prior: 50476667!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1. ^ true].
+	^ false.
+! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:45:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:45:02'!
+ERROR!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:45:12' prior: 50476707!
+intentarReproducirse
+	| cant |
+	cant := 0.
+	avispaOrnella perderHuevo ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:45:17'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:45:17'!
+ERROR!
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:46:25' prior: 50476736!
+intentarReproducirse
+	| cant tmp |
+	cant := 0.
+	tmp := avispaOrnella perderHuevo.
+	tmp ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:46:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:46:31'!
+ERROR!
+!AvispaOriana class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:47:21' prior: 50476661!
+perderHuevo
+	(huevos > 0) ifTrue: [	huevos := huevos - 1. ^ true].
+	^ false.
+! !
+!AvispaLara class methodsFor: 'as yet unclassified' stamp: 'IO-MG 4/24/2022 22:48:12' prior: 50476753!
+intentarReproducirse
+	| cant |
+	cant := 0.
+
+	avispaOrnella perderHuevo ifTrue: [cant := cant + 1].
+	avispaPolly perderHuevo ifTrue: [cant := cant + 1].
+	avispaOriana perderHuevo ifTrue: [cant := cant + 1].
+	huevos := huevos + cant.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:48:28'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:48:36'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:48:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:48:44'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:48:44'!
+ERROR!
+!PruebasReproduccionDeAvispas class methodsFor: 'Para completar' stamp: 'IO-MG 4/24/2022 22:49:19' prior: 50476070!
+cantidadDeHuevosConLaFirmaGeneticaDeLara
+	^ self laAvispaLara dameCantidadHuevos.! !
+!AvispaLara class methodsFor: 'nil' stamp: 'IO-MG 4/24/2022 22:49:52'!
+dameCantidadHuevos
+	^ huevos.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:49:58'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:10'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:15'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:15'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:15'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:20'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:24'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:24'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:24'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:24'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:29'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 22:50:29'!
+PASSED!
+!Avispa class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/24/2022 23:07:29' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.! !
+!AvispaLara class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/24/2022 23:07:29' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaOrnella := AvispaOriana.
+	avispaOriana := AvispaOriana.
+	avispaPolly := Avispa.
+	huevos := 0.! !
+!AvispaOriana class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/24/2022 23:07:29' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.! !
+!Habitat class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/24/2022 23:07:29' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaLara := AvispaLara.
+	avispaOriana := AvispaOriana.
+	huevos := Avispa.
+	avispaPolly := Avispa.
+	avispaOrnella := AvispaOriana.! !
+
+!methodRemoval: Avispa class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/24/2022 23:07:29'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.!
+
+!methodRemoval: AvispaLara class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/24/2022 23:07:29'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaOrnella := AvispaOriana.
+	avispaOriana := AvispaOriana.
+	avispaPolly := Avispa.
+	huevos := 0.!
+
+!methodRemoval: AvispaOriana class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/24/2022 23:07:29'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.!
+
+!methodRemoval: Habitat class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/24/2022 23:07:29'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaLara := AvispaLara.
+	avispaOriana := AvispaOriana.
+	huevos := Avispa.
+	avispaPolly := Avispa.
+	avispaOrnella := AvispaOriana.!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'IO-MG 4/24/2022 23:07:43'!
+PASSED!
+
+----SNAPSHOT----(24 April 2022 23:07:51) CuisUniversity-5093.image priorSource: 4602153!
+
+----SNAPSHOT----(24 April 2022 23:07:52) CuisUniversity-5093.image priorSource: 4651743!
+
+----SNAPSHOT----(24 April 2022 23:07:52) CuisUniversity-5093.image priorSource: 4651833!
+
+10 class superclass!
+
+10 class !
+
+10 Metaclass!
+
+10 class Metaclass!
+
+100 factorial!
+
+1000 factorial!
+
+DoIt
+
+| i |
+i := 0
+i<100 whileTrue:[i factorial. i := i + 1]!
+
+----End fileIn of /Applications/cuis/Packages/TerseGuide.pck.st----!
+
+#(1 23 45) class!
+
+----QUIT----(26 April 2022 11:10:04) CuisUniversity-5093.image priorSource: 4651923!
+
+----STARTUP---- (27 April 2022 18:54:33) as /Applications/cuis/CuisUniversity-5093.image!
+
+!Avispa class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/27/2022 18:54:55' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.! !
+!AvispaLara class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/27/2022 18:54:55' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaOrnella := AvispaOriana.
+	avispaOriana := AvispaOriana.
+	avispaPolly := Avispa.
+	huevos := 0.! !
+!AvispaOriana class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/27/2022 18:54:55' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.! !
+!Habitat class methodsFor: '--** private fileout/in **--' stamp: 'IO-MG 4/27/2022 18:54:55' overrides: 50447471!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaLara := AvispaLara.
+	avispaOriana := AvispaOriana.
+	huevos := Avispa.
+	avispaPolly := Avispa.
+	avispaOrnella := AvispaOriana.! !
+
+!methodRemoval: Avispa class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/27/2022 18:54:55'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.!
+
+!methodRemoval: AvispaLara class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/27/2022 18:54:55'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaOrnella := AvispaOriana.
+	avispaOriana := AvispaOriana.
+	avispaPolly := Avispa.
+	huevos := 0.!
+
+!methodRemoval: AvispaOriana class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/27/2022 18:54:55'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	orugas := 0.
+	huevos := 0.
+	polillas := 0.!
+
+!methodRemoval: Habitat class #initializeCollaboratorsFromFile stamp: 'IO-MG 4/27/2022 18:54:55'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	avispaLara := AvispaLara.
+	avispaOriana := AvispaOriana.
+	huevos := Avispa.
+	avispaPolly := Avispa.
+	avispaOrnella := AvispaOriana.!
