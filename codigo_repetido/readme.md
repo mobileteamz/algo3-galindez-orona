@@ -15,3 +15,4 @@ para manipular esas colecciones de objetos. También trae conjuntos (Set) Diccio
 a la hora de modelar problemas de la realidad.
 
 ## Teoría de Naur
+La calidad de la teoria construida por los programadores disminuye al haber codigo repetido; es por eso que al hacer y usar abstracciones del codigo repetido, empleamos una buena tecnica para representar nuestra teoria.
