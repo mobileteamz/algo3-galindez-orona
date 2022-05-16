@@ -263,6 +263,23 @@ Object subclass: #Nodo
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
+!Nodo methodsFor: 'accessing' stamp: 'IO-MG 5/16/2022 12:51:10'!
+init
+	self subclassResponsability.! !
+
+!Nodo methodsFor: 'accessing' stamp: 'IO-MG 5/16/2022 12:51:19'!
+pop
+	self subclassResponsability.! !
+
+!Nodo methodsFor: 'accessing' stamp: 'IO-MG 5/16/2022 12:51:23'!
+top
+	self subclassResponsability.! !
+
+
+!Nodo methodsFor: 'inspecting' stamp: 'IO-MG 5/16/2022 12:51:45'!
+isEmpty
+	self subclassResponsability.! !
+
 
 !classDefinition: #NodoNoVacio category: 'Stack-Exercise'!
 Nodo subclass: #NodoNoVacio
@@ -271,27 +288,27 @@ Nodo subclass: #NodoNoVacio
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!NodoNoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 20:02:27'!
-isEmpty
-	^false.! !
-
-!NodoNoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 19:53:02'!
-pop
-	^dato.! !
-
-!NodoNoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 20:03:02'!
-siguiente
-	^siguiente.! !
-
-!NodoNoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 19:53:44'!
-top
-	^dato.! !
-
-
-!NodoNoVacio methodsFor: 'as yet unclassified' stamp: 'MG 5/12/2022 19:54:28'!
+!NodoNoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 19:54:28'!
 initWithStack: unStack andWithDato: unDato
 	siguiente := unStack.
 	dato := unDato.! !
+
+!NodoNoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 19:53:02'!
+pop
+	^dato.! !
+
+!NodoNoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 20:03:02'!
+siguiente
+	^siguiente.! !
+
+
+!NodoNoVacio methodsFor: 'inspecting' stamp: 'MG 5/12/2022 20:02:27'!
+isEmpty
+	^false.! !
+
+!NodoNoVacio methodsFor: 'inspecting' stamp: 'MG 5/12/2022 19:53:44'!
+top
+	^dato.! !
 
 
 !classDefinition: #NodoVacio category: 'Stack-Exercise'!
@@ -301,22 +318,22 @@ Nodo subclass: #NodoVacio
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!NodoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 20:02:22'!
+!NodoVacio methodsFor: 'inspecting' stamp: 'MG 5/12/2022 20:02:22'!
 isEmpty
 	^true.! !
 
-!NodoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 20:30:41'!
+
+!NodoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 20:30:41'!
 pop
 	self class signalCustomerNameCannotBeEmpty.! !
 
-!NodoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 19:49:00'!
+!NodoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 19:49:00'!
 siguiente
 	^nil.! !
 
-!NodoVacio methodsFor: 'nil' stamp: 'MG 5/12/2022 20:33:59'!
+!NodoVacio methodsFor: 'accessing' stamp: 'MG 5/12/2022 20:33:59'!
 top
 	self class signalCustomerNameCannotBeEmpty.! !
-
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -398,19 +415,25 @@ Object subclass: #SentenceFinderByPrefix
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'IO-MG 5/15/2022 22:32:26'!
+!SentenceFinderByPrefix methodsFor: 'init' stamp: 'IO-MG 5/15/2022 21:47:43'!
+initWithStack: aStack
+	stack := aStack.! !
+
+
+!SentenceFinderByPrefix methodsFor: 'conversion' stamp: 'IO-MG 5/15/2022 22:32:26'!
 convertStack: aStack intoCollection:aCollection	
 	aStack isEmpty ifTrue: [^aCollection.].
 	aCollection add:aStack .
 	^self convertStack:(aStack siguiente) intoCollection:aCollection.! !
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'IO-MG 5/15/2022 23:17:43'!
+
+!SentenceFinderByPrefix methodsFor: 'search' stamp: 'IO-MG 5/15/2022 23:17:43'!
 find: aSentence
 	| newStack ret_value|
 	newStack := stack.	
 	^self searchInStack: newStack aSentence: aSentence.! !
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'IO-MG 5/15/2022 22:05:06'!
+!SentenceFinderByPrefix methodsFor: 'search' stamp: 'IO-MG 5/15/2022 22:05:06'!
 findVersionAlternativa: aSentence
 	| aCollection ret_value|
 	
@@ -427,11 +450,7 @@ findVersionAlternativa: aSentence
 	
 	^ret_value.! !
 
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'IO-MG 5/15/2022 21:47:43'!
-initWithStack: aStack
-	stack := aStack.! !
-
-!SentenceFinderByPrefix methodsFor: 'as yet unclassified' stamp: 'IO-MG 5/15/2022 23:14:22'!
+!SentenceFinderByPrefix methodsFor: 'search' stamp: 'IO-MG 5/15/2022 23:14:22'!
 searchInStack: aStack aSentence: aSentence
 	| ret_value |
 	ret_value := OrderedCollection new.
