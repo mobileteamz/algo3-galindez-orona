@@ -14,11 +14,11 @@ test01Initialization
 	self assert: newRover currentPoint = (0@0).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/29/2022 22:57:10'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:39:17'!
 test02testFoward
 	| newRover  somePoint|	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'f'.
 	
 	somePoint := newRover currentPoint.
@@ -38,11 +38,11 @@ test03testBackwards
 	self assert: newRover currentPoint equals: (0@-1).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:30:24'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:46:04'!
 test04rotateClockwise
 	| newRover  currentCardinalPoint|	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'r'.
 	
 	
@@ -51,36 +51,58 @@ test04rotateClockwise
 	self assert: newRover currentCardinalPoint equals: $E.
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:25:27'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:46:25'!
 test05rotateAntiClockwise
 	| newRover |	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'l'.
 	
 	self assert: newRover currentCardinalPoint equals: $W.
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:45:32'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:39:33'!
 test06path
 	| newRover |	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'ffffl'.
 	
 	self assert: newRover currentCardinalPoint equals: $W.
 	self assert: newRover currentPoint equals: (0@4).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:45:45'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:40:18'!
 test07moreComplexPath
 	| newRover |	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'fffflffff'.
 	
 	self assert: newRover currentCardinalPoint equals: $W.
-	self assert: newRover currentPoint equals: (0@4).
+	self assert: newRover currentPoint equals: (-4@4).
+	! !
+
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:48:27'!
+test08notSoComplexPath
+	| newRover |	
+	
+	newRover := MarsRover new initWith:0@0 and:$N.	
+	newRover executeCommand: 'lffff'.
+	
+	self assert: newRover currentCardinalPoint equals: $W.
+	self assert: newRover currentPoint equals: (-4@0).
+	! !
+
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:50:47'!
+test09ComplexPath
+	| newRover |	
+	
+	newRover := MarsRover new initWith:0@0 and:$N.	
+	newRover executeCommand: 'ffffflffflffffb'.
+	
+	self assert: newRover currentCardinalPoint equals: $S.
+	self assert: newRover currentPoint equals: (-3@1).
 	! !
 
 
@@ -297,9 +319,9 @@ FowardPointingTowardsEast class
 newCardinalPoint
 	^$E.! !
 
-!FowardPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:47:44'!
+!FowardPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 5/30/2022 14:37:25'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'E'.! !
+	^anInitialCardinalPoint = $E.! !
 
 !FowardPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:47:58'!
 value
@@ -323,9 +345,9 @@ FowardPointingTowardsNorth class
 newCardinalPoint
 	^$N.! !
 
-!FowardPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 22:44:59'!
+!FowardPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/30/2022 14:37:19'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'N'.! !
+	^anInitialCardinalPoint = $N.! !
 
 !FowardPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:42:18'!
 value
@@ -349,9 +371,9 @@ FowardPointingTowardsSouth class
 newCardinalPoint
 	^$S.! !
 
-!FowardPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:46:15'!
+!FowardPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 5/30/2022 14:37:12'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'S'.! !
+	^anInitialCardinalPoint = $S.! !
 
 !FowardPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:46:11'!
 value
@@ -375,9 +397,9 @@ FowardPointingTowardsWest class
 newCardinalPoint
 	^$W.! !
 
-!FowardPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:48:21'!
+!FowardPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 5/30/2022 14:36:56'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'W'.! !
+	^anInitialCardinalPoint = $W.! !
 
 !FowardPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:48:16'!
 value
@@ -428,9 +450,9 @@ RotateAntiClockwisePoitingTowardsEast class
 newCardinalPoint: aCardinalPoint
 	^$N.! !
 
-!RotateAntiClockwisePoitingTowardsEast class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:24:09'!
+!RotateAntiClockwisePoitingTowardsEast class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:42:29'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'E'.! !
+	^anInitialCardinalPoint = $E.! !
 
 !RotateAntiClockwisePoitingTowardsEast class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:56'!
 value
@@ -454,9 +476,9 @@ RotateAntiClockwisePoitingTowardsNorth class
 newCardinalPoint: aCardinalPoint
 	^$W.! !
 
-!RotateAntiClockwisePoitingTowardsNorth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:15'!
+!RotateAntiClockwisePoitingTowardsNorth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:42:35'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'N'.! !
+	^anInitialCardinalPoint = $N.! !
 
 !RotateAntiClockwisePoitingTowardsNorth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:24'!
 value
@@ -476,13 +498,13 @@ RotateAntiClockwise subclass: #RotateAntiClockwisePoitingTowardsSouth
 RotateAntiClockwisePoitingTowardsSouth class
 	instanceVariableNames: ''!
 
-!RotateAntiClockwisePoitingTowardsSouth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:44'!
+!RotateAntiClockwisePoitingTowardsSouth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:41:26'!
 newCardinalPoint: aCardinalPoint
-	^$W.! !
+	^$E.! !
 
-!RotateAntiClockwisePoitingTowardsSouth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:49'!
+!RotateAntiClockwisePoitingTowardsSouth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:42:42'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'S'.! !
+	^anInitialCardinalPoint = $S.! !
 
 !RotateAntiClockwisePoitingTowardsSouth class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:23:33'!
 value
@@ -502,13 +524,13 @@ RotateAntiClockwise subclass: #RotateAntiClockwisePoitingTowardsWest
 RotateAntiClockwisePoitingTowardsWest class
 	instanceVariableNames: ''!
 
-!RotateAntiClockwisePoitingTowardsWest class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:24:28'!
+!RotateAntiClockwisePoitingTowardsWest class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:41:43'!
 newCardinalPoint: aCardinalPoint
-	^$N.! !
+	^$S.! !
 
-!RotateAntiClockwisePoitingTowardsWest class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:24:32'!
+!RotateAntiClockwisePoitingTowardsWest class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 14:42:53'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'W'.! !
+	^anInitialCardinalPoint = $W.! !
 
 !RotateAntiClockwisePoitingTowardsWest class methodsFor: 'as yet unclassified' stamp: 'iO 5/30/2022 00:24:23'!
 value
@@ -585,9 +607,9 @@ RotateClockwisePointingTowardsNorth class
 newCardinalPoint: aCardinalPoint
 	^$E.! !
 
-!RotateClockwisePointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/30/2022 00:00:15'!
+!RotateClockwisePointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/30/2022 14:43:31'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'N'.! !
+	^anInitialCardinalPoint = $N.! !
 
 !RotateClockwisePointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/30/2022 00:04:17'!
 value
