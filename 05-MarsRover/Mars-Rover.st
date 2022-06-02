@@ -1,3 +1,11 @@
+!classDefinition: #CommandNotFound category: 'Mars-Rover'!
+Error subclass: #CommandNotFound
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Mars-Rover'!
+
+
 !classDefinition: #MarsRoverTests category: 'Mars-Rover'!
 TestCase subclass: #MarsRoverTests
 	instanceVariableNames: ''
@@ -5,16 +13,16 @@ TestCase subclass: #MarsRoverTests
 	poolDictionaries: ''
 	category: 'Mars-Rover'!
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:06:53'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 6/2/2022 15:43:21'!
 test01Initialization
 	| newRover |	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	
-	self assert: newRover currentCardinalPoint equals:'N'.
+	self assert: newRover currentCardinalPoint equals:$N.
 	self assert: newRover currentPoint = (0@0).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:39:17'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 6/2/2022 15:48:09'!
 test02testFoward
 	| newRover  somePoint|	
 	
@@ -26,11 +34,11 @@ test02testFoward
 	self assert: newRover currentPoint equals: (0@1).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 00:46:27'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 6/2/2022 15:48:22'!
 test03testBackwards
 	| newRover  somePoint|	
 	
-	newRover := MarsRover new initWith:0@0 and:'N'.	
+	newRover := MarsRover new initWith:0@0 and:$N.	
 	newRover executeCommand: 'b'.
 	
 	somePoint := newRover currentPoint.
@@ -94,15 +102,32 @@ test08notSoComplexPath
 	self assert: newRover currentPoint equals: (-4@0).
 	! !
 
-!MarsRoverTests methodsFor: 'testing' stamp: 'iO 5/30/2022 14:50:47'!
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 6/2/2022 15:52:51'!
 test09ComplexPath
 	| newRover |	
 	
 	newRover := MarsRover new initWith:0@0 and:$N.	
-	newRover executeCommand: 'ffffflffflffffb'.
+	newRover executeCommand: 'ffffflffflffffr'.
 	
-	self assert: newRover currentCardinalPoint equals: $S.
+	self assert: newRover currentCardinalPoint equals: $W.
 	self assert: newRover currentPoint equals: (-3@1).
+	! !
+
+!MarsRoverTests methodsFor: 'testing' stamp: 'iO 6/2/2022 15:53:09'!
+test10StopsAfterUnknownCommands
+	| newRover |	
+	
+	newRover := MarsRover new initWith:0@0 and:$N.				
+	
+	[ newRover executeCommand: 'ffffflfffUUUlffffb'.
+		self fail ]
+			on: CommandNotFound 
+			do: [ :anError | 
+				self assert: newRover currentPoint equals: (-3@5).
+				self assert: newRover currentCardinalPoint equals: $W. ]
+	
+
+	
 	! !
 
 
@@ -132,13 +157,16 @@ currentPoint
 executeCommand: aCommand
 	aCommand do: [ :aLetter | self resolveCommand: aLetter]. ! !
 
-!MarsRover methodsFor: 'evaluating' stamp: 'iO 5/30/2022 00:40:29'!
+!MarsRover methodsFor: 'evaluating' stamp: 'iO 6/2/2022 15:52:33'!
 resolveCommand: aCommand
 	(self class allSubclasses) do: [ :aSubclass | ((aSubclass canHandle:aCommand) & (aSubclass respondsToInitialCardinalPoint: (self currentCardinalPoint))) ifTrue: [
 			theCurrentPoint  := ((self currentPoint) x + (aSubclass value) x) @ ((self currentPoint) y + (aSubclass value) y).  
 			theCurrentCardinalPoint := aSubclass newCardinalPoint: (self currentCardinalPoint).
 			^self. ].
-			].! !
+			].
+		
+	^ CommandNotFound signal.
+		! !
 
 
 !classDefinition: #Backwards category: 'Mars-Rover'!
@@ -189,9 +217,9 @@ BackwardsPointingTowardsEast class
 newCardinalPoint
 	^$E.! !
 
-!BackwardsPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:53:02'!
+!BackwardsPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 6/2/2022 15:42:51'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'E'.! !
+	^anInitialCardinalPoint = $E.! !
 
 !BackwardsPointingTowardsEast class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:53:30'!
 value
@@ -215,9 +243,9 @@ BackwardsPointingTowardsNorth class
 newCardinalPoint
 	^$N.! !
 
-!BackwardsPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:51:03'!
+!BackwardsPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 6/2/2022 15:42:23'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'N'.! !
+	^anInitialCardinalPoint = $N.! !
 
 !BackwardsPointingTowardsNorth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:52:11'!
 value
@@ -241,9 +269,9 @@ BackwardsPointingTowardsSouth class
 newCardinalPoint
 	^$S.! !
 
-!BackwardsPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:53:12'!
+!BackwardsPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 6/2/2022 15:42:35'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'S'.! !
+	^anInitialCardinalPoint = $S.! !
 
 !BackwardsPointingTowardsSouth class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:52:41'!
 value
@@ -267,9 +295,9 @@ BackwardsPointingTowardsWest class
 newCardinalPoint
 	^$W.! !
 
-!BackwardsPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:53:50'!
+!BackwardsPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 6/2/2022 15:42:42'!
 respondsToInitialCardinalPoint: anInitialCardinalPoint
-	^anInitialCardinalPoint = 'W'.! !
+	^anInitialCardinalPoint = $W.! !
 
 !BackwardsPointingTowardsWest class methodsFor: 'accessing' stamp: 'iO 5/29/2022 23:53:57'!
 value
