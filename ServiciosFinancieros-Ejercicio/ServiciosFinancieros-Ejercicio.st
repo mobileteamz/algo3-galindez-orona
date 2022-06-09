@@ -6,6 +6,14 @@ Error subclass: #NotEnoughFunds
 	category: 'ServiciosFinancieros-Ejercicio'!
 
 
+!classDefinition: #TransactionNotPresent category: 'ServiciosFinancieros-Ejercicio'!
+Error subclass: #TransactionNotPresent
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ServiciosFinancieros-Ejercicio'!
+
+
 !classDefinition: #ValueNotValid category: 'ServiciosFinancieros-Ejercicio'!
 Error subclass: #ValueNotValid
 	instanceVariableNames: ''
@@ -20,6 +28,29 @@ TestCase subclass: #ReceptiveAccountTest
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/9/2022 16:25:22'!
+test010FindTransferLeg
+	| account account2 transfer1 transfer2 transfer3 counterpart|
+	
+	account := ReceptiveAccount new.	
+	account2 := ReceptiveAccount new.	
+	Deposit register: 100 * peso on: account.
+	
+	account2 := ReceptiveAccount new.			
+	transfer1 := Transfer new register: 10 * peso from:account to:account2.
+	transfer2 := Transfer new register: 20 * peso from:account to:account2.
+	transfer3 := Transfer new register: 30 * peso from:account to:account2.
+	
+	counterpart := (transfer2 deposit) counterpart.
+
+	self assert: counterpart value equals: 20*  peso.			
+	self assert: account balance equals:   40 * peso.
+	self assert: account2 balance equals: 60 * peso.
+
+		
+	
+! !
 
 !ReceptiveAccountTest methodsFor: 'tests' stamp: 'LL 7/1/2021 03:10:43'!
 test01ReceptiveAccountHaveZeroAsBalanceWhenCreated 
@@ -141,19 +172,6 @@ test09Transfer100
 	
 ! !
 
-!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/7/2022 14:10:32'!
-test10PortfolioVacio
-	| portfolio |
-
-	portfolio := Portfolio new.
-
-	self assert: portfolio balance equals: 0 * peso.
-
-
-		
-	
-! !
-
 !ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/7/2022 13:59:27'!
 test11PortfolioCuentasBalance
 	| account account2 portfolio |
@@ -175,8 +193,51 @@ test11PortfolioCuentasBalance
 	
 ! !
 
-!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/7/2022 14:09:11'!
-test12PortfolioMasPorfolio
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/9/2022 16:26:21'!
+test12PortfolioVacio
+	| portfolio |
+
+	portfolio := Portfolio new.
+
+	self assert: portfolio balance equals: 0 * peso.
+
+
+		
+	
+! !
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/9/2022 15:41:44'!
+test13CheckEveryTransaction
+	| account account2 account3 portfolio allTransactions|
+	
+	allTransactions := OrderedCollection new.
+	
+	account := ReceptiveAccount new.	
+	allTransactions add: (account transactions).
+	Deposit register: 50 * peso on: account.
+
+	account2 := ReceptiveAccount new.		
+	allTransactions add: (account2 transactions).
+	Deposit register: 25 * peso on: account2.
+
+	portfolio := Portfolio new.
+	portfolio registerAccount: account.
+	portfolio registerAccount: account2.
+
+	account3 := ReceptiveAccount new.	
+	allTransactions add: (account3 transactions).
+	Deposit register: 50 * peso on: account.
+	
+	self assertEveryTransaction:portfolio in:allTransactions.		
+	self assert: (portfolio balance) equals: 125 * peso.
+
+
+		
+	
+! !
+
+!ReceptiveAccountTest methodsFor: 'tests' stamp: 'iO 6/9/2022 16:26:08'!
+test14PortfolioMasPorfolio
 	| account account2 account3 portfolio portfolio2 |
 	
 	account := ReceptiveAccount new.	
@@ -203,6 +264,48 @@ test12PortfolioMasPorfolio
 		
 	
 ! !
+
+
+!ReceptiveAccountTest methodsFor: 'helperMethods' stamp: 'iO 6/9/2022 15:31:00'!
+assertEveryTransaction:portfolio in: allTransactions
+	| portfolioTransactions |
+	
+	portfolioTransactions := portfolio transactions.
+	
+	allTransactions do: [ :transaction | (portfolioTransactions includes:transaction) ifFalse: [TransactionNotPresent new]. ].! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'ReceptiveAccountTest class' category: 'ServiciosFinancieros-Ejercicio'!
+ReceptiveAccountTest class
+	instanceVariableNames: ''!
+
+!ReceptiveAccountTest class methodsFor: 'as yet unclassified' stamp: 'iO 6/9/2022 15:33:03'!
+DoIt
+
+| account account2 account3 portfolio allTransactions t|
+	
+	allTransactions := OrderedCollection new.
+	
+	account := ReceptiveAccount new.	
+	t := (account transactions).
+	allTransactions add: t.
+	Deposit register: 50 * peso on: account.
+
+	account2 := ReceptiveAccount new.		
+	allTransactions add: (account2 transactions).
+	Deposit register: 25 * peso on: account2.
+
+	portfolio := Portfolio new.
+	portfolio registerAccount: account.
+	portfolio registerAccount: account2.
+
+	account3 := ReceptiveAccount new.	
+	"allTransactions add: (account3 transactions)."
+	Deposit register: 50 * peso on: account.
+	
+	self assertEveryTransaction:portfolio in:allTransactions.		
+	self assert: (portfolio balance) equals: 125 * peso.! !
 
 
 !classDefinition: #AccountTransaction category: 'ServiciosFinancieros-Ejercicio'!
@@ -276,6 +379,10 @@ AccountTransaction subclass: #DepositTransfer
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
 
+!DepositTransfer methodsFor: 'as yet unclassified' stamp: 'iO 6/9/2022 16:21:49'!
+counterpart
+	^counterpart.! !
+
 !DepositTransfer methodsFor: 'as yet unclassified' stamp: 'iO 6/6/2022 21:05:52'!
 initializeFor: aValue
 
@@ -314,14 +421,22 @@ AccountTransaction subclass: #Transfer
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
 
-!Transfer methodsFor: 'nil' stamp: 'iO 6/5/2022 22:42:55'!
+!Transfer methodsFor: 'legs' stamp: 'iO 6/9/2022 15:43:38'!
+deposit
+	^deposit! !
+
+!Transfer methodsFor: 'legs' stamp: 'iO 6/9/2022 15:43:51'!
+withdraw
+	^withdraw ! !
+
+
+!Transfer methodsFor: 'creation' stamp: 'iO 6/5/2022 22:42:55'!
 initializeFor:aWithdraw destiny:aDeposit
 .
 	withdraw := aWithdraw.
 	deposit := aDeposit.! !
 
-
-!Transfer methodsFor: 'as yet unclassified' stamp: 'iO 6/7/2022 14:18:30'!
+!Transfer methodsFor: 'creation' stamp: 'iO 6/7/2022 14:18:30'!
 register: aValue from:originAccount to: destinyAccount
 	
 	aValue > 0 ifFalse:[ValueNotValid new].
@@ -377,6 +492,10 @@ AccountTransaction subclass: #WithdrawTransfer
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'ServiciosFinancieros-Ejercicio'!
+
+!WithdrawTransfer methodsFor: 'as yet unclassified' stamp: 'iO 6/9/2022 16:21:33'!
+counterpart
+	^counterpart .! !
 
 !WithdrawTransfer methodsFor: 'as yet unclassified' stamp: 'iO 6/6/2022 21:05:42'!
 initializeFor: aValue
@@ -439,11 +558,11 @@ registerAccount: account
 					ifTrue:[cuentas add:(account accounts)]
 					ifFalse:[cuentas add:account].! !
 
-!Portfolio methodsFor: 'as yet unclassified' stamp: 'io 12/31/2020 21:12:34'!
+!Portfolio methodsFor: 'as yet unclassified' stamp: 'iO 6/9/2022 15:27:52'!
 transactions
 	| ret_value |
 	ret_value := OrderedCollection new.
-	cuentas do: [ :cuenta | ret_value append: (cuenta transactions )].
+	cuentas do: [ :cuenta | ret_value add: (cuenta transactions )].
 	^ ret_value .! !
 
 
