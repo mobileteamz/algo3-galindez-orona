@@ -130,7 +130,7 @@ test02With1Accounts
 	
 	! !
 
-!PortfolioReportsTest methodsFor: 'tests' stamp: 'iO 6/16/2022 17:27:45'!
+!PortfolioReportsTest methodsFor: 'tests' stamp: 'iO 6/16/2022 18:36:49'!
 test03With2Accounts
 	| account anotherAccount portfolioTreePrinter portfolio report|
 	
@@ -147,7 +147,7 @@ test03With2Accounts
 	
 	! !
 
-!PortfolioReportsTest methodsFor: 'tests' stamp: 'iO 6/16/2022 17:38:58'!
+!PortfolioReportsTest methodsFor: 'tests' stamp: 'iO 6/16/2022 18:38:17'!
 test04With2AccountsAnd2Portfolios
 	| account account2 account3 account4 portfolioTreePrinter portfolio portfolio2 report|
 	
@@ -167,9 +167,60 @@ test04With2AccountsAnd2Portfolios
 	self assert: (report at:1) equals: 'Portfolio 1'.
 	self assert: (report at:2) equals: 'Cuenta vacia 1'.
 	self assert: (report at:3) equals: 'Cuenta vacia 2'.
-	self assert: (report at:4) equals: 'Porfolio 2'.
+	self assert: (report at:4) equals: 'Portfolio 2'.
+	self assert: (report at:5) equals: 'Cuenta vacia 3'.
+	self assert: (report at:6) equals: 'Cuenta vacia 4'.
 	
 	! !
+
+!PortfolioReportsTest methodsFor: 'tests' stamp: 'iO 6/16/2022 18:42:46'!
+test05EnunciadoTest
+	| myAccount johnsAccount angiesAccount familyPortfolio childrenPortfolio portfolioTreePrinter report|
+	
+	johnsAccount := ReceptiveAccount named: 'Cuenta de Juan'. 
+	angiesAccount := ReceptiveAccount named: 'Cuenta de Angeles'. 
+	childrenPortfolio := Portfolio named: 'Portfolio de hijos' with: johnsAccount with: angiesAccount. 
+
+	myAccount := ReceptiveAccount named: 'Cuenta mia'. 
+	familyPortfolio := Portfolio named: 'Portfolio de la familia' with: myAccount with: childrenPortfolio.
+	
+	portfolioTreePrinter := PortfolioTreePrinter with:familyPortfolio.
+	report := portfolioTreePrinter accept: portfolioTreePrinter.
+	
+	self assert: (report at:1) equals: 'Portfolio de la familia'.
+	self assert: (report at:2) equals: 'Cuenta mia'.
+	self assert: (report at:3) equals: 'Portfolio de hijos'.
+	self assert: (report at:4) equals: 'Cuenta de Juan'.
+	self assert: (report at:5) equals: 'Cuenta de Angeles'.
+	
+	! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'PortfolioReportsTest class' category: 'ServiciosFinancieros-Parte2'!
+PortfolioReportsTest class
+	instanceVariableNames: ''!
+
+!PortfolioReportsTest class methodsFor: 'as yet unclassified' stamp: 'iO 6/16/2022 18:42:16'!
+DoIt
+
+| myAccount johnsAccount angiesAccount familyPortfolio childrenPortfolio portfolioTreePrinter report|
+	
+	johnsAccount := ReceptiveAccount named: 'Cuenta de Juan'. 
+	angiesAccount := ReceptiveAccount named: 'Cuenta de Angeles'. 
+	childrenPortfolio := Portfolio named: 'Portfolio de hijos' with: johnsAccount with: angiesAccount. 
+
+	myAccount := ReceptiveAccount named: 'Cuenta mia'. 
+	familyPortfolio := Portfolio named: 'Portfolio de la familia' with: myAccount with: childrenPortfolio.
+	
+	portfolioTreePrinter := PortfolioTreePrinter with:familyPortfolio.
+	report := portfolioTreePrinter accept: portfolioTreePrinter.
+	
+	self assert: (report at:1) equals: 'Portfolio de la familia'.
+	self assert: (report at:2) equals: 'Cuenta mia'.
+	self assert: (report at:3) equals: 'Portfolio de los hijos'.
+	self assert: (report at:4) equals: 'Cuenta de Juan'.
+	self assert: (report at:5) equals: 'Cuenta de Angeles'.! !
 
 
 !classDefinition: #PortfolioTest category: 'ServiciosFinancieros-Parte2'!
@@ -843,14 +894,11 @@ signalCanNotAddAccount
 	self error: self class canNotAddAccountErrorMessage! !
 
 
-!Portfolio methodsFor: 'reports' stamp: 'iO 6/16/2022 17:19:16'!
-visit
-	| ret_value |
-	ret_value := OrderedCollection new.
-	
-	ret_value add:name.	
-	accounts do: [ :account | ret_value add: (account visit) ].
-	^ret_value.! !
+!Portfolio methodsFor: 'reports' stamp: 'iO 6/16/2022 18:36:22'!
+visit: collection	
+	collection add:name.	
+	accounts do: [ :account | (account visit:collection) ].
+	^collection.! !
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
@@ -953,9 +1001,9 @@ isComposedBy: anAccount
 	^self = anAccount ! !
 
 
-!ReceptiveAccount methodsFor: 'reports' stamp: 'iO 6/16/2022 17:23:08'!
-visit
-	^ name.
+!ReceptiveAccount methodsFor: 'reports' stamp: 'iO 6/16/2022 18:33:16'!
+visit: collection
+	^ collection add:name.
 	! !
 
 
@@ -1244,9 +1292,11 @@ rootPortfolio: aPortfolio
 	rootPortfolio := aPortfolio.! !
 
 
-!PortfolioTreePrinter methodsFor: 'reports' stamp: 'iO 6/16/2022 17:17:40'!
+!PortfolioTreePrinter methodsFor: 'reports' stamp: 'iO 6/16/2022 18:33:52'!
 accept: transactions
-	^rootPortfolio visit.
+	| collection |
+	collection := OrderedCollection new.
+	^(rootPortfolio visit:collection).
 	! !
 
 
